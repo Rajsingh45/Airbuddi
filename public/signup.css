@@ -196,16 +196,16 @@ form .btn input[type="submit"] {
 }
 
 .logo {
-    width: 30%;
-    height: 10%;
+    width: 50%;
+    height: 3%;
     border-radius: 10%;
     object-fit: cover;
     border: 2px solid #fff;
     transition: transform 0.3s ease;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-top: 0.5%;
 }
 
 .logo:hover {
