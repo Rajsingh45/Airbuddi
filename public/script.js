@@ -5,6 +5,14 @@ const loginBtn = document.querySelector(".slide.login");
 const signupBtn = document.querySelector(".slide.signup");
 const signupLink = document.querySelector("form .signup-link a");
 
+const backendUrl = 'https://airbuddigreen.onrender.com/';
+
+fetch(`${backendUrl}/auth/login`, {
+  method: 'POST',
+  // other options
+});
+
+
 function showLogin() {
     document.getElementById("login").checked = true;
     loginForm.style.marginLeft = "0%";
@@ -31,7 +39,7 @@ loginForm.onsubmit = async (e) => {
     const formData = new FormData(loginForm);
     const data = Object.fromEntries(formData);
 
-    const response = await fetch('/auth/login', {
+    const response = await fetch('${backendUrl}/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -52,7 +60,7 @@ signupForm.onsubmit = async (e) => {
     const formData = new FormData(signupForm);
     const data = Object.fromEntries(formData);
 
-    const response = await fetch('/auth/register', {
+    const response = await fetch('${backendUrl}/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)

@@ -127,9 +127,10 @@
     </div>
     
     <script>
+        const backendUrl = 'https://airbuddigreen.onrender.com/';
         function redirectToPage(deviceId) {
             const token = localStorage.getItem('token');
-            fetch(`/aqi/data/${deviceId}`, {
+            fetch(`${backendUrl}/aqi/data/${deviceId}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`

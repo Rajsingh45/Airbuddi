@@ -7,7 +7,12 @@ const authRoutes = require('./routes/auth');
 const aqiRoutes = require('./routes/aqi');
 // const deviceRoutes = require('./routes/device'); // Add this line
 
-const app = express();
+// const app = express();
+
+app.use(cors({
+    origin: 'https://visionary-sunburst-d9d8b5.netlify.app/',
+    credentials: true,
+  }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,5 +27,5 @@ app.use('/aqi', aqiRoutes);
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
