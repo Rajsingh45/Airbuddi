@@ -39,7 +39,7 @@ loginForm.onsubmit = async (e) => {
     const formData = new FormData(loginForm);
     const data = Object.fromEntries(formData);
 
-    const response = await fetch('${backendUrl}/auth/login', {
+    const response = await fetch(`${backendUrl}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -60,7 +60,7 @@ signupForm.onsubmit = async (e) => {
     const formData = new FormData(signupForm);
     const data = Object.fromEntries(formData);
 
-    const response = await fetch('${backendUrl}/auth/register', {
+    const response = await fetch(`${backendUrl}/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
