@@ -5,7 +5,7 @@ const loginBtn = document.querySelector(".slide.login");
 const signupBtn = document.querySelector(".slide.signup");
 const signupLink = document.querySelector("form .signup-link a");
 
-const backendUrl = 'https://airbuddigreen.onrender.com/';
+const backendUrl = 'https://airbuddigreen.onrender.com';
 
 // fetch(`${backendUrl}/auth/login`, {
 //   method: 'POST',
