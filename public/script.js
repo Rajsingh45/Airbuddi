@@ -7,10 +7,10 @@ const signupLink = document.querySelector("form .signup-link a");
 
 const backendUrl = 'https://airbuddigreen.onrender.com/';
 
-fetch(`${backendUrl}/auth/login`, {
-  method: 'POST',
-  // other options
-});
+// fetch(`${backendUrl}/auth/login`, {
+//   method: 'POST',
+//   // other options
+// });
 
 
 function showLogin() {

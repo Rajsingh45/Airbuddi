@@ -7,7 +7,7 @@ const authRoutes = require('./routes/auth');
 const aqiRoutes = require('./routes/aqi');
 // const deviceRoutes = require('./routes/device'); // Add this line
 
-// const app = express();
+const app = express();
 
 app.use(cors({
     origin: 'https://visionary-sunburst-d9d8b5.netlify.app/',
