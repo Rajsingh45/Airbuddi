@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/aqi', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/aqi', {});
 
 app.use('/auth', authRoutes);
 app.use('/aqi', aqiRoutes);
