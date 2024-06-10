@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/aqi', {});
+mongoose.connect('mongodb+srv://rajsingh30930:2Ma5N89o2cESsEg8@cluster0.us1gtcr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {});
 
 app.use('/auth', authRoutes);
 app.use('/aqi', aqiRoutes);
